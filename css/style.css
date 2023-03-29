@@ -48,9 +48,43 @@ body {
     background-color: whitesmoke;
     padding: 0.5rem 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
+}
+
+.content_display input {
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    /*border: 0.1rem dotted gray;*/
+    width: 100px;
+}
+
+.display_results {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.display_history {
+    font-size: 1.8rem;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon_history {
+    font-size: 1.4rem;
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 2rem;
 }
 
 .operator {
@@ -99,6 +133,11 @@ body {
     background-color: rgb(147, 73, 182);
     color: whitesmoke;
     cursor: pointer;
+}
+
+.response {
+    font-size: 3.4rem;
+    color: rgb(40, 147, 173);
 }
 
 .operators button {
