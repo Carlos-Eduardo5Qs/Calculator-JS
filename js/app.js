@@ -62,6 +62,10 @@ class Calculator {
             case 'C':
                 this.processClearAll();
                 break;
+
+            case '=':
+                this.processEqual();
+                break;
                 
             default:
                 return;
@@ -108,7 +112,13 @@ class Calculator {
     processClearAll() {
         this.previousOperationText.value = '';
         this.currentOperationText.value = '';
-    }
+    };
+
+    processEqual() {
+        const operation = previousOperationText.value.split(' ')[1];
+
+        this.processOperation(operation);
+    };
 
 };
 
