@@ -3,7 +3,7 @@
 * Este é um projeto de calculadora simples criado usando HTML, CSS e JavaScript puro.
 
 # 📷 Captura de Tela
-![Foto do projeto](./.prints/calculator.png)
+![Foto do projeto](./prints/calculator.png)
 
 # 🚀 Tecnologias
 
