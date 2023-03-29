@@ -14,6 +14,29 @@ body {
     justify-content: center;
     min-height: 100vh;
     font-size: 2.4rem;
+    background-image: url('../Assets/background-main.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rede_social {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.8rem;
+    padding: 1rem 0.6rem;
+    background-color: rgb(22, 15, 29);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.rede_social a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .container_calculator {
@@ -22,13 +45,12 @@ body {
 }
 
 .content_display {
-    padding: 0.5rem;
+    background-color: whitesmoke;
+    padding: 0.5rem 1rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
-    height: 60px;
-    margin-right: 0.5rem;
+    height: 80px;
 }
 
 .operator {
@@ -47,13 +69,40 @@ body {
     width: 100px;
     height: 80px;
     font-size: 2.2rem;
+    border: none;
 }
 
+.number button {
+    background-color: rgb(199, 199, 199);
+    transition: 0.4s ease-in-out;
+}
+
+.number button:hover {
+    background-color: rgb(219, 217, 217);
+}
 
 .clear button {
     width: 100%;
+    background-color: rgb(49, 138, 160);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.del button {
+    background-color: rgb(255, 55, 55);
+    color: whitesmoke;
+    cursor: pointer;
 }
 
 .resolve button {
     width: 100%;
+    background-color: rgb(147, 73, 182);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.operators button {
+    background-color: rgb(29, 28, 29);
+    color: whitesmoke;
+    cursor: pointer;
 }
