@@ -97,7 +97,7 @@ body {
     width: 100px;
     height: 80px;
     font-size: 2.2rem;
-    border: none;
+    border: 0.1rem solid rgba(0, 0, 0, 0.514);
 }
 
 .number {
@@ -106,42 +106,49 @@ body {
 }
 
 .number:hover {
-    background-color: rgb(219, 217, 217);
+    background-color: rgb(255, 254, 254);
 }
 
 .clear button {
     width: 100%;
-    background-color: rgb(147, 73, 182);
+    background-color: rgba(46, 45, 46, 0.822);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.remove button {
+    width: 100%;
+    background-color: rgba(46, 45, 46, 0.822);
     color: whitesmoke;
     cursor: pointer;
 }
 
 .del button {
-    background-color: rgb(255, 55, 55);
+    background-color: rgba(46, 45, 45, 0.822);
     color: whitesmoke;
     cursor: pointer;
 }
 
 .resolve button {
     width: 100%;
-    background-color: rgb(147, 73, 182);
+    background-color: rgba(46, 45, 46, 0.822);
     color: whitesmoke;
     cursor: pointer;
 }
 
 .response {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(117, 117, 117);
 }
 
 
 .display_results .display {
     border-radius: 10px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .arithmetic_operators {
-    background-color: rgb(29, 28, 29);
+    background-color: rgba(46, 45, 46, 0.822);
     color: whitesmoke;
     cursor: pointer;
 }
