@@ -19,6 +19,12 @@ class Calculator {
     };
 
     processOperation(operation) {
+        if(this.currentOperationText.value === '') {
+            if(this.previousOperationText !== '') {
+                this.changeOperation(operation);
+            }
+            return;
+        }
         
         let operationValue;
         const previous = +this.previousOperationText.value.split(' ')[0];
@@ -67,6 +73,16 @@ class Calculator {
             this.previousOperationText.value = `${operationValue} ${operation}`;
             this.currentOperationText.value = "";
         }
+    };
+
+    changeOperation(operation) {
+        const mathOperation = ['*', '/', '+', '-'];
+
+        if(!mathOperation.includes(operation)) {
+            return;
+        };
+
+        this.previousOperationText.value = this.previousOperationText.value.slice(0, -1) + operation;
     };
 
 };
