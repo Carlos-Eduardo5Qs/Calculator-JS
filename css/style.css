@@ -111,12 +111,12 @@ body {
     border: none;
 }
 
-.number button {
+.number {
     background-color: rgb(199, 199, 199);
     transition: 0.4s ease-in-out;
 }
 
-.number button:hover {
+.number:hover {
     background-color: rgb(219, 217, 217);
 }
 
@@ -145,7 +145,7 @@ body {
     color: rgb(40, 147, 173);
 }
 
-.operators button {
+.operators {
     background-color: rgb(29, 28, 29);
     color: whitesmoke;
     cursor: pointer;
